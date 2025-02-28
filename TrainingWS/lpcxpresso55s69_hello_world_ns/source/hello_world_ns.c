@@ -33,22 +33,29 @@ void SystemInit(void)
 int main(void)
 {
     int result;
+    uint32_t *test_ptr;
+    volatile uint32_t test_value = 0;
 
     /* set BOD VBAT level to 1.65V */
     POWER_SetBodVbatLevel(kPOWER_BodVbatLevel1650mv, kPOWER_BodHystLevel50mv, false);
 
-    PRINTF_NSE("Welcome in normal world!\r\n");
-    PRINTF_NSE("This is a text printed from normal world!\r\n");
+    (void)test_value;
+    PRINTF_NSE("Entered ns world");
+    test_ptr = (uint32_t *)(0x10000000);//secure code address
+    test_value = *test_ptr;
 
-    result = StringCompare_NSE(&strcmp, "Test1\r\n", "Test2\r\n");
-    if (result == 0)
-    {
-        PRINTF_NSE("Both strings are equal!\r\n");
-    }
-    else
-    {
-        PRINTF_NSE("Both strings are not equal!\r\n");
-    }
+    PRINTF_NSE("Read s world address\r\n");
+//    PRINTF_NSE("This is a text printed from normal world!\r\n");
+//
+//    result = StringCompare_NSE(&strcmp, "Test1\r\n", "Test2\r\n");
+//    if (result == 0)
+//    {
+//        PRINTF_NSE("Both strings are equal!\r\n");
+//    }
+//    else
+//    {
+//        PRINTF_NSE("Both strings are not equal!\r\n");
+//    }
     while (1)
     {
     }
