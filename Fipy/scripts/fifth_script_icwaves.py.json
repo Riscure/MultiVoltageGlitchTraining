@@ -1,0 +1,81 @@
+{
+    "attempts": {
+        "attempts": 99999999999999
+    },
+    "glitch_delay": {
+        "amount": 1,
+        "max": 1417,
+        "min": 1415,
+        "type": 1
+    },
+    "glitch_delay2": {
+        "amount": 1,
+        "max": 18381,
+        "min": 16868,
+        "type": 1
+    },
+    "glitch_delay3": {
+        "amount": 1,
+        "max": 1809000,
+        "min": 1781980,
+        "type": 1
+    },
+    "glitch_length": {
+        "amount": 1,
+        "max": 267,
+        "min": 246,
+        "type": 1
+    },
+    "glitch_length2": {
+        "amount": 1,
+        "max": 749,
+        "min": 689,
+        "type": 1
+    },
+    "glitch_length3": {
+        "amount": 1,
+        "max": 200,
+        "min": 40,
+        "type": 1
+    },
+    "glitch_voltage": {
+        "amount": 1,
+        "max": -0.0232,
+        "min": -0.032,
+        "type": 1
+    },
+    "glitch_voltage2": {
+        "amount": 1,
+        "max": 0.03,
+        "min": -0.05,
+        "type": 1
+    },
+    "glitch_voltage3": {
+        "amount": 1,
+        "max": 0.574,
+        "min": -0.472,
+        "type": 1
+    },
+    "glitches": {
+        "type": 3,
+        "value": 1
+    },
+    "normal_voltage": {
+        "type": 3,
+        "value": 0.9
+    },
+    "serial_baudrate": {
+        "type": 3,
+        "value": 115200
+    },
+    "serial_com_port": {
+        "value": "COM43"
+    },
+    "serial_timeout": {
+        "type": 3,
+        "value": 0.04
+    },
+    "spider_com_port": {
+        "value": "COM42"
+    }
+}

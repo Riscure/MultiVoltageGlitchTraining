@@ -1,0 +1,56 @@
+{
+    "active_script": "fourth_script.py",
+    "camera_type": "none",
+    "die_layout_path": "layout.png",
+    "hop_height": 100.0,
+    "imagestitch": {
+        "hor": 2,
+        "img": "",
+        "link": true,
+        "ver": 2
+    },
+    "libpath": [],
+    "table_references": [
+        {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 0.0
+        }
+    ],
+    "warping_references": [
+        {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 0.0
+        },
+        {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.01
+        }
+    ],
+    "xyz_table_port": "COM3",
+    "xyz_table_type": "dummy",
+    "xyz_table_version": 4,
+    "xyz_table_warping": "NONE"
+}

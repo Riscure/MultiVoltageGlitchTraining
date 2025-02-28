@@ -1,0 +1,54 @@
+{
+    "attempts": {
+        "attempts": 10
+    },
+    "coupling": {
+        "value": "1"
+    },
+    "impedance": {
+        "value": "0"
+    },
+    "normal_voltage": {
+        "type": 3,
+        "value": 0.9
+    },
+    "post_num_samples": {
+        "type": 3,
+        "value": 10000
+    },
+    "pre_num_samples": {
+        "type": 3,
+        "value": 10000
+    },
+    "range": {
+        "value": "4"
+    },
+    "serial_baudrate": {
+        "type": 3,
+        "value": 115200
+    },
+    "serial_com_port": {
+        "value": "COM42"
+    },
+    "serial_timeout": {
+        "type": 3,
+        "value": 1
+    },
+    "spider_com_port": {
+        "value": "COM42"
+    },
+    "timebase": {
+        "value": "3"
+    },
+    "trigger_edge": {
+        "value": "0"
+    },
+    "trigger_level": {
+        "type": 3,
+        "value": 1
+    },
+    "trigger_timeout": {
+        "type": 3,
+        "value": 1000
+    }
+}

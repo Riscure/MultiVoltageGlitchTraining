@@ -1,0 +1,31 @@
+{
+    "atr": {
+        "value": ""
+    },
+    "attempts": {
+        "attempts": 1000
+    },
+    "cmd_logging": {
+        "value": true
+    },
+    "glitch_delay": {
+        "amount": 1,
+        "max": 200,
+        "min": 100,
+        "type": 1
+    },
+    "glitch_length": {
+        "amount": 1,
+        "max": 200,
+        "min": 10,
+        "type": 1
+    },
+    "glitch_voltage": {
+        "type": 3,
+        "value": 0
+    },
+    "normal_voltage": {
+        "type": 3,
+        "value": 3
+    }
+}

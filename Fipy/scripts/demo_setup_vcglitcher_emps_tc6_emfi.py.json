@@ -1,0 +1,37 @@
+{
+    "atr": {
+        "value": ""
+    },
+    "cmd_logging": {
+        "value": false
+    },
+    "glitch_delay": {
+        "end": 200,
+        "start": 100,
+        "step": 10,
+        "type": 2
+    },
+    "glitch_power": {
+        "end": 100,
+        "start": 10,
+        "step": 10,
+        "type": 2
+    },
+    "normal_voltage": {
+        "type": 3,
+        "value": 5
+    },
+    "scans": {
+        "attempts": 200
+    },
+    "xyz_scanner": {
+        "point_a_x": 0,
+        "point_a_y": 0,
+        "point_b_x": 1,
+        "point_b_y": 0,
+        "point_c_x": 1,
+        "point_c_y": 1,
+        "step_x": 0.5,
+        "step_y": 0.5
+    }
+}

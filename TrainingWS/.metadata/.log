@@ -1,0 +1,31 @@
+!SESSION 2025-02-24 17:39:56.587 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2025-02-24 17:40:30.408
+!MESSAGE Recreating part support. No part support available.
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-02-24 17:40:33.679
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\danicart'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2025-02-24 17:40:34.689
+!MESSAGE The device 'LPC55S69' (version='1.0.0') from SDK 'SDK_2.x_LPCXpresso55S69' (version='2.16.000', build='epluginsite808 2024-07-15') will be installed.
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-02-24 17:41:49.518
+!MESSAGE Indexed 'lpcxpresso55s69_hello_world_ns' (21 sources, 67 headers) in 2,84 sec: 6.901 declarations; 17.841 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-02-24 17:42:08.980
+!MESSAGE Indexed 'lpcxpresso55s69_hello_world_s' (24 sources, 31 headers) in 1,1 sec: 5.046 declarations; 11.598 references; 28 unresolved inclusions; 69 syntax errors; 3.512 unresolved names (17%)
+
+!ENTRY com.crt.log 1 0 2025-02-28 11:09:04.005
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2025-02-28 11:09:05.029
+!MESSAGE RedlinkServer telnet session connected on port 3025->52686 @ 127.0.0.1
