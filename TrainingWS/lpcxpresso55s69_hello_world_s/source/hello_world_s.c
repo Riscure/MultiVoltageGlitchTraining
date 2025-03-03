@@ -102,7 +102,7 @@ int main(void)
     BOARD_InitPins();
     BOARD_BootClockPLL150M();
     BOARD_InitDebugConsole();
-    GPIO_PinWrite(GPIO, 0, 15, 1U); // Set pin LOW
+    GPIO_PinWrite(GPIO, 0, 15, 1U); // Set pin HIGH
 
     a=succeeding_fault_targets();
     GPIO_PinWrite(GPIO, 0, 15, 0U); // Set pin LOW

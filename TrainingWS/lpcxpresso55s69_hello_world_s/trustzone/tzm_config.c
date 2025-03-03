@@ -19,6 +19,8 @@ processor_version: 0.10.1
  **********************************************************************************************************************/
 #include "fsl_common.h"
 #include "tzm_config.h"
+#include "fsl_gpio.h"
+
 
 /***********************************************************************************************************************
  * Definitions
@@ -135,7 +137,6 @@ functional_group:
 void BOARD_InitTrustZone()
 {
     /* SAU configuration */
-    GPIO_PinWrite(GPIO, 0, 15, 1U); // Set pin LOW
 
     /* Set SAU Control register: Disable SAU and All Secure */
     SAU->CTRL = 0;
@@ -170,9 +171,54 @@ void BOARD_InitTrustZone()
     __ISB();
 
     /* Set SAU Control register: Enable SAU and All Secure (applied only if disabled) */
+    GPIO_PinWrite(GPIO, 0, 15, 1U); // Set pin HIGH
+
+    asm volatile (
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+    );
     SAU->CTRL = ((0U << SAU_CTRL_ALLNS_Pos) & SAU_CTRL_ALLNS_Msk) | ((1U << SAU_CTRL_ENABLE_Pos) & SAU_CTRL_ENABLE_Msk);
+    asm volatile (
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+    );
     GPIO_PinWrite(GPIO, 0, 15, 0U); // Set pin LOW
-    GPIO_PinWrite(GPIO, 0, 15, 1U); // Set pin LOW
 
     /* AHB configuration */
 
@@ -264,8 +310,52 @@ void BOARD_InitTrustZone()
     AHB_SECURE_CTRL->MASTER_SEC_ANTI_POL_REG = (AHB_SECURE_CTRL->MASTER_SEC_ANTI_POL_REG & 0x03FFFFFFFU) | 0x080000000U;
     AHB_SECURE_CTRL->CPU0_LOCK_REG           = 0x800002AAU;
     AHB_SECURE_CTRL->CPU1_LOCK_REG           = 0x8000000AU;
+    GPIO_PinWrite(GPIO, 0, 15, 1U); // Set pin HIGH
+    asm volatile (
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+    );
     AHB_SECURE_CTRL->MISC_CTRL_REG           = (AHB_SECURE_CTRL->MISC_CTRL_REG & 0x0FFFF0003U) | 0x00000AAA4U;
     AHB_SECURE_CTRL->MISC_CTRL_DP_REG        = 0x0000AAA5U;
+    asm volatile (
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+        "nop\n"
+    );
     GPIO_PinWrite(GPIO, 0, 15, 0U); // Set pin LOW
-
 }
